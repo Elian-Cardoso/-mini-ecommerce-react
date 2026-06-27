@@ -5,7 +5,7 @@
       "nome": "Tênis Esportivo",
       "descricao": "Tênis confortável para corrida e uso casual, com amortecimento reforçado.",
       "preco": 259.9,
-      "imagem": "https://picsum.photos/seed/tenis/400/300",
+      "imagem": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop",
       "estoque": 8
     },
     {
@@ -13,7 +13,7 @@
       "nome": "Fone Bluetooth",
       "descricao": "Fone de ouvido sem fio com cancelamento de ruído e bateria de longa duração.",
       "preco": 149.5,
-      "imagem": "https://picsum.photos/seed/fone/400/300",
+      "imagem": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop",
       "estoque": 5
     },
     {
@@ -21,7 +21,7 @@
       "nome": "Mochila Notebook",
       "descricao": "Mochila resistente à água com compartimento acolchoado para notebook de até 15.6 polegadas.",
       "preco": 189,
-      "imagem": "https://picsum.photos/seed/mochila/400/300",
+      "imagem": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop",
       "estoque": 0
     },
     {
@@ -29,7 +29,7 @@
       "nome": "Relógio Smartwatch",
       "descricao": "Smartwatch com monitor de batimentos cardíacos, notificações e à prova de água.",
       "preco": 320,
-      "imagem": "https://picsum.photos/seed/relogio/400/300",
+      "imagem": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop",
       "estoque": 3
     },
     {
@@ -37,8 +37,16 @@
       "nome": "Cadeira Gamer",
       "descricao": "Cadeira ergonômica com ajuste de altura e apoio lombar reforçado.",
       "preco": 899.9,
-      "imagem": "https://picsum.photos/seed/cadeira/400/300",
+      "imagem": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=400&h=300&fit=crop",
       "estoque": 2
+    },
+    {
+      "nome": "Bola Campo Adidas Trionda",
+      "descricao": "Copa do Mundo 2026 Pro - Branco",
+      "preco": 949.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_852277-MLB49772200811_042022-F.jpg",
+      "estoque": 4,
+      "id": "kyIKZa6ZEec"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
