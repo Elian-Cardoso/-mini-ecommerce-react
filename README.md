@@ -1,16 +1,79 @@
-# React + Vite
+# Mini E-commerce — React + JSON Server
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto da disciplina de Desenvolvimento de Aplicação Orientada a Componentes (ULBRA). Entrega individual.
 
-Currently, two official plugins are available:
+> Por ser entrega individual, conforme as regras do trabalho, os itens de **edição de produto** e **gerenciamento de estoque avançado** foram dispensados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologias
 
-## React Compiler
+- React + Vite
+- React Router DOM
+- Context API
+- TailwindCSS
+- JSON Server (API simulada)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Estrutura do projeto
 
-## Expanding the ESLint configuration
+src/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+├── components/   → Header e ProductCard
+
+├── context/      → CartContext (carrinho global)
+
+├── pages/        → Home, ProductDetail, Cart, ProductForm, NotFound
+
+├── services/     → api.js (funções de fetch)
+
+## Funcionalidades implementadas
+
+- Listagem de produtos consumindo a API (`/produtos`)
+- Página de detalhes do produto (`useParams`)
+- Carrinho global via Context API (`useContext`), com aumento/diminuição/remoção de itens e total geral
+- Bloqueio de quantidade acima do estoque, com mensagem de aviso
+- Cadastro de produto com validações (campos obrigatórios, preço e estoque ≥ 0) e foco automático no primeiro campo inválido (`useRef`)
+- Exclusão de produto (CRUD: Create, Read, Delete)
+- Roteamento com `react-router-dom` e página 404
+- Layout responsivo com TailwindCSS
+
+## Uso do Context API
+
+O carrinho é gerenciado em `src/context/CartContext.jsx`. O `CartProvider` envolve toda a aplicação (em `main.jsx`) e armazena o array `cart` (produtos + quantidade). Disponibiliza as funções `addToCart`, `increaseQuantity`, `decreaseQuantity`, `removeFromCart` e o `total`, consumidas via hook customizado `useCart()` nas páginas `ProductDetail`, `Cart` e no `Header`.
+
+## Endpoints da API
+
+| Método | Endpoint         | Uso                  |
+|--------|------------------|------------------------|
+| GET    | /produtos        | Listar produtos        |
+| GET    | /produtos/:id    | Buscar produto por ID  |
+| POST   | /produtos        | Criar produto          |
+| DELETE | /produtos/:id    | Excluir produto        |
+
+## Como rodar o projeto
+
+```bash
+npm install
+
+# Terminal 1 — API simulada
+npm run server
+
+# Terminal 2 — aplicação React
+npm run dev
+```
+
+Acesse `http://localhost:5173`.
+
+## Screenshots
+
+| Tela | Imagem |
+|------|--------|
+| Home | ![Home](docs/screenshots/01-home/img.png) |
+| Detalhes do produto | ![Detalhes](docs/screenshots/02-detalhes/img.png) |
+| Cadastro preenchido | ![Cadastro ok](docs/screenshots/03-cadastro-ok/img.png) |
+| Cadastro com erro | ![Cadastro erro](docs/screenshots/04-cadastro-erro/img.png) |
+| Carrinho | ![Carrinho](docs/screenshots/05-carrinho/img.png) |
+| Estoque máximo atingido | ![Estoque máximo](docs/screenshots/06-estoque-maximo/img.png) |
+| Responsivo (mobile) | ![Mobile](docs/screenshots/07-mobile/img.png) |
+| Página 404 | ![404](docs/screenshots/08-404/img.png) |
+
+---
+**Autor:** Elian Cardoso
