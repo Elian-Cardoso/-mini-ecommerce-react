@@ -66,14 +66,14 @@ Acesse `http://localhost:5173`.
 
 | Tela | Imagem |
 |------|--------|
-| Home | ![Home](docs/screenshots/01-home/img.png) |
-| Detalhes do produto | ![Detalhes](docs/screenshots/02-detalhes/img.png) |
-| Cadastro preenchido | ![Cadastro ok](docs/screenshots/03-cadastro-ok/img.png) |
-| Cadastro com erro | ![Cadastro erro](docs/screenshots/04-cadastro-erro/img.png) |
-| Carrinho | ![Carrinho](docs/screenshots/05-carrinho/img.png) |
-| Estoque máximo atingido | ![Estoque máximo](docs/screenshots/06-estoque-maximo/img.png) |
-| Responsivo (mobile) | ![Mobile](docs/screenshots/07-mobile/img.png) |
-| Página 404 | ![404](docs/screenshots/08-404/img.png) |
+| Home | ![Home](docs/screenshots/01-home/img.png.png) |
+| Detalhes do produto | ![Detalhes](docs/screenshots/02-detalhes/img.png.png) |
+| Cadastro preenchido | ![Cadastro ok](docs/screenshots/03-cadastro/img.png.png) |
+| Cadastro com erro | ![Cadastro erro](docs/screenshots/04-cadastro-erro/img.png.png) |
+| Carrinho | ![Carrinho](docs/screenshots/05-carrinho/img.png.png) |
+| Estoque máximo atingido | ![Estoque máximo](docs/screenshots/06-estoque-maximo/img.png.png) |
+| Página 404 | ![404](docs/screenshots/07-404/img.png.png) |
+| Responsivo (mobile) | ![Mobile](docs/screenshots/08-mobile/img.png.png) |
 
 ---
 **Autor:** Elian Cardoso
